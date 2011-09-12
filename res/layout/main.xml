@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<ImageView android:id="@+id/logo_9gag" android:src="@drawable/logo_9gag"
+		android:layout_width="fill_parent" android:layout_height="58dp"/>
+
+	<ViewFlipper android:id="@+id/viewflipper"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:id="@+id/hot" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Hot" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/fresh"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Fresh" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/trending"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Trending" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/featured"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Featured" />
+		</LinearLayout>
+	</ViewFlipper>
+
+</LinearLayout>
